@@ -1,0 +1,9 @@
+"scripts": {
+    "lint": "pint --test",
+    "analyse": "phpstan analyse",
+    "verify": [
+        "@lint",
+        "@analyse",
+        "@php artisan test"
+    ]
+}
